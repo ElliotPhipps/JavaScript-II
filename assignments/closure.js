@@ -4,7 +4,26 @@
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
 
+function genres(genresName) {
+  const genre = 'Fantasy';
+  const genre2 = 'Horror';
+  console.log(`My favorite ${genresName} to write include ${genre} and ${genre2}.`);
 
+  function books(booksName) {
+    const book = 'Lord of the Rings';
+    const book2 = 'The Walking Dead';
+    console.log(`${booksName} that inspire me to write include ${book} and ${book2}.`);
+
+    function chapters(chaptersName) {
+      const chaptertotal = 62;
+      const chaptertotal2 = 193;
+      console.log(`The ${chaptersName} count for Lord of the Rings is ${chaptertotal} and the chapter/issue count for The Walking Dead is ${chaptertotal2}.`);
+    } 
+    chapters('chapter');
+  } 
+  books('Books');
+} 
+genres('genres');
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
 
